@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main>
+        <div class="left">
+            <div class="search">
+                <form action="#">
+                    <div>
+                        <input id="search-input" type="text" placeholder="Search for places" required>
+                        <button id="search-btn"></button>
+                    </div>
+                </form>
+            </div>
+            <div class="main-weather-icon"></div>
+            <div class="description"></div>
+            <div class="wraper">
+                <div class="main-weather"></div>
+                <div class="units">&#8451</div>
+            </div>
+            <hr>
+            <div class="day-time"></div>
+            <div class="location"></div>
+        </div>
+
+        <div class="right">
+
+            <div class="header">
+                <h2>5 days</h2>
+                <div class="units-tab">
+                    <label class="custom">
+                        <input type="radio" class="unit" name="units" value="metric" checked>
+                        <span>&#8451</span>
+                    </label>
+                    <label class="custom">
+                        <input type="radio" class="unit" name="units" value="imperial">
+                        <span>&#8457</span>
+                    </label>
+                </div>
+            </div>
+
+            <div class="day-wrapper">
+
+            </div>
+
+            <h2>Today's Highlights</h2>
+            <div class="highlights-wrapper">
+                <div>
+                    <p>Pressure</p>
+                    <div class="center">
+                        <div class="pressure"></div>
+
+                    </div>
+                </div>
+                <div>
+                    <p>Wind Status</p>
+                    <div class="center">
+                        <div class="wind"></div>
+                    </div>
+                </div>
+                <div>
+                    <p>Sunrise & Sunset</p>
+                    <div class="sunrise-sunset">
+                        <div>
+                            <div class="sunrise"></div>
+                            <div class="rise-time"></div>
+                        </div>
+                        <div>
+                            <div class="sunset"></div>
+                            <div class="set-time"></div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <p>Humidity</p>
+                    <div class="center">
+                        <div class="humidity"></div>
+                    </div>
+                </div>
+                <div>
+                    <p>Visibility</p>
+                    <div class="center">
+                        <div class="visibility"></div>
+                    </div>
+                </div>
+                <div>
+                    <p>Air Quality Index</p>
+                    <div class="air-qual">
+                        <div class="quality"></div>
+                        <div class="air-desc"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+</body>
+</html>
